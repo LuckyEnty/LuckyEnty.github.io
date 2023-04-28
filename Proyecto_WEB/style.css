@@ -1,0 +1,96 @@
+.contenido-title{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;       
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .contenido-texto{
+        font-family:'Times New Roman', Times, serif;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .navegacion  {
+        background-color: #020d4d;
+        color: white;       
+        width: 100%;
+        height: 45px; 
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+    }
+    .class-rigth{
+        padding-left: 100px;
+        color: antiquewhite;
+        text-align: right; 
+    }
+    .space{
+        padding-left: 50%;
+        padding-right: 20px;
+    }
+    .space-menu{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navegacion_1{
+        background-color: #777575;
+        color: rgb(255, 255, 255);
+        height: 40px;
+        width: 100%;
+        font-family: cursive;
+    }
+
+    .contenido-texto-footer{
+        font-family: cursive;
+        text-align: center;
+        clear: both;
+    }      
+
+    /* Menu desplegable */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        padding: 10px;
+        cursor:pointer;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #9e9999e7;
+        min-width: 200px;
+        padding: 10px;
+        z-index: 1;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    /* Estilo para la lista */
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        padding: 5px;
+    }
+    li:hover {
+        background-color: #bbb;
+    }
+
+    /* Prueba */
+
+    .resaltar {
+        transition: all 0.3s ease-out;
+        }
+    
+        .resaltar:hover {
+            font-size: 1.3em;
+            opacity: 0.8;
+        }
