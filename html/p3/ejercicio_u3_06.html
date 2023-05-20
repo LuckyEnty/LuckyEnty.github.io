@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .Tit{ background-color: black; color:aqua;}
+        </style>
+    </head>
+    <body>
+        <h1 class="Tit">JavaScript - Operadores</h1>
+        <script>
+            /* 4.1.1.11*/
+            let varNum = prompt("Ingresa un valor...", "0");
+            varNum = varNum ? varNum : "0";
+        
+            /* Tarea n 1 */
+            if (varNum > 90 && varNum < 110) {
+                alert("¡Adivinaste!");
+            } else {
+                alert("Fallaste");
+            }
+        
+            /* Tarea n 2 */
+            let varRes1 = (varNum > 90 && varNum < 110) ? "¡Lotería!" : "Perdiste";
+        
+            /* Tarea n 3 */
+            let varNum1 = Number(prompt("Ingresa el primer número:", "0"));
+            let varNum2 = Number(prompt("Ingresa el segundo número:", "0"));
+            let varOp = prompt("Ingresa el operador (+, -, *, /):");
+        
+            if (!Number.isNaN(varNum1) && !Number.isNaN(varNum2)) {
+                switch (varOp) {
+                    case '+':
+                        alert ("El resultado de (" + varNum1 + " + " + varNum2 + ") es: " + (varNum1 + varNum2));
+                        break;
+                    case '-':
+                        alert("El resultado de (" + varNum1 + " - " + varNum2 + ") es: " + (varNum1 - varNum2));
+                        break;
+                    case '*':
+                        alert("El resultado de (" + varNum1 + " * " + varNum2 + ") es: " + (varNum1 * varNum2));
+                        break;
+                    case '/':
+                        alert("El resultado de (" + varNum1 + " / " + varNum2 + ") es: " + (varNum1 / varNum2));
+                        break;
+                    default:
+                        alert("Operador no válido");
+                }
+            } else {
+                alert("Los operadores deben ser valores numéricos.");
+            }
+        </script>
+        
+    </body>
+</html>

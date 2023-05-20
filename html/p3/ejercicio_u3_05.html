@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .Tit{ background-color: black; color:aqua;}
+        </style>
+    </head>
+    <body>
+        <h1 class="Tit">JavaScript - Operadores</h1>
+        <script>
+           /* 3.3.1.7*/
+           let varAncho = prompt("Ancho ? ", "20");
+           let varAltura = prompt("Altura ? ", "10");
+           let varLongitud = prompt("Longitud ? ", "50");
+
+           let bandAncho, bandAlto, bandLongitud;
+
+           bandAlto = varAltura ? true : false;
+           bandAncho = varAncho ? true : false;
+           bandLongitud = varLongitud ? true : false;
+
+           if (bandAncho && bandAlto && bandLongitud)
+                alert("Volumen: " + (varAncho * varAltura * varLongitud) + " unidades cúbicas.");
+            
+           if(!bandAncho)
+                strMensaje += "Anchura";
+           if(!bandAlto)
+                strMensaje += "Altura";
+           if(!bandLongitud)
+                strMensaje += "Longitud";
+            
+            if(bandAncho && bandAlto && bandLongitud)
+                alert("Volumen: " + (varAncho * varAltura * varLongitud) + " unidades cúbicas.");
+            else
+                alert(strMensaje);
+        </script>
+    </body>
+</html>

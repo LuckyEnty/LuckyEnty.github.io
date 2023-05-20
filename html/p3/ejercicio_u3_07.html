@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /*Tarea n 1*/
+            let varNum;
+            /*Ciclo For*/
+            for(varNum = 100; varNum >= 0; varNum -= 10){
+                console.log("For >> Valor: " + varNum);
+            }
+            /*Ciclo Do-While*/
+            varNum = 100;
+            do{
+                console.log("Do-While >> Valor : " + varNum);
+                varNum -= 10;
+            }while(varNum >= 0);
+
+            /*Ciclo While*/
+            varNum = 100;
+            while(varNum >= 0){
+                console.log("While >> Valor: " + varNum);
+                varNum -= 10;
+            }
+            let varValor_1 = Number(prompt("Valor inicial del ciclo: "));
+            let varValor_2 = Number(prompt("Valor final del ciclo: "));
+
+            let bandDec = false, bandInc = false;
+            
+            if(varValor_1 > varValor_2){
+                bandDec = true;
+            }
+            else{
+                bandInc = true;
+            }
+            if(Number.isNan(varValor_1) || Number.isNaN(varValor_2)){
+                alert("Ingresa solo numeros");
+            }
+            else{
+                for(let x =varValor_1; x <varValor_2; x++){
+                    console.log(x);
+                }
+            }
+        </script>
+    </body>
+</html>
