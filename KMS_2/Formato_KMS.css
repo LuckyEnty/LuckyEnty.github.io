@@ -1,0 +1,104 @@
+.wrap{
+    background: rgb(207, 204, 204);
+    border-top: 1px;
+    border-bottom: 1px;
+    padding-top: 1.0714285714rem;
+    padding-bottom: 1.0714285714rem;
+}
+
+body{
+    background-image: url(mult/BG.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;   
+    }
+    p, h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+       
+    }
+    section{
+        padding: 20px;
+    }
+    @keyframes breathing {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .resaltar {
+    transition: all 0.3s ease-out;
+    }
+
+    .resaltar:hover {
+        font-size: 1.9em;
+        opacity: 0.8;
+    }
+ 
+    #navegacion  {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    
